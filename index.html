@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <header class="header">
+      <a href="#">
+        <img src="./img/logo.png" alt="" width="50px" />
+      </a>
+
+      <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#home">Our Profile</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#message">Message Us</a>
+      </nav>
+    </header>
+    <!-- Navbar end -->
+
+    <!-- Home Section start -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hi,</h3>
+        <h4>Backend Developer</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, iusto! Inventore facere obcaecati porro, nesciunt odit ducimus nemo explicabo eaque!</p>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/adityalevine/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/adityalevine/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <a href="#" class="btn">Download CV</a>
+      </div>
+
+      <div class="home-img">
+        <img src="./img/profile.png" alt="profile" />
+      </div>
+    </section>
+    <!-- Home Section end -->
+
+    <!-- Portfolio Section start -->
+    <section class="portfolio" id="portfolio">
+      <h2>Our Headquarter</h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="./img/logo.png" alt="" width="200" />
+          <p>Jakarta</p>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="./img/logo.png" alt="" width="200" />
+          <p>Bandung</p>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="./img/logo.png" alt="" width="200" />
+          <p>Surabaya</p>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section end -->
+
+    <!-- Message Us Section start -->
+    <section class="message" id="message">
+      <h2>Message Us</h2>
+
+      <div class="message-container">
+        <div class="form-input">
+          <form action="" id="message-form">
+            <table>
+              <tr>
+                <td><label for="name">Nama:</label></td>
+                <td><input type="text" id="name" name="name" /></td>
+              </tr>
+              <tr>
+                <td><label for="born">Tanggal Lahir:</label></td>
+                <td><input type="date" id="born" name="born" /></td>
+              </tr>
+              <tr>
+                <td><label for="gender">Jenis Kelamin:</label></td>
+                <td>
+                  <input type="radio" id="male" name="gender" value="Laki-laki" />
+                  <label for="male">Laki-laki</label>
+                  <input type="radio" id="female" name="gender" value="Perempuan" />
+                  <label for="female">Perempuan</label>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="message">Pesan:</label></td>
+                <td><textarea id="message" name="message" rows="4" cols="40"></textarea></td>
+              </tr>
+              <tr>
+                <td colspan="2" style="text-align: center">
+                  <button type="submit">Submit</button>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+
+        <div class="form-output">
+          <table>
+            <tr>
+              <td>Current Time:</td>
+              <td id="current-time"></td>
+            </tr>
+            <tr>
+              <td>Nama:</td>
+              <td id="output-name"></td>
+            </tr>
+            <tr>
+              <td>Tanggal Lahir:</td>
+              <td id="output-born"></td>
+            </tr>
+            <tr>
+              <td>Jenis Kelamin:</td>
+              <td id="output-gender"></td>
+            </tr>
+            <tr>
+              <td>Pesan:</td>
+              <td id="output-message"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- Message Us Section end -->
+
+    <!-- Footer start -->
+    <footer class="footer">
+      <p>© 2024 by Angga Aditya Putra Pratama</p>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- JS -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
